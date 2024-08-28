@@ -12,7 +12,7 @@ import curly from './rules/curly'
 
 const plugin = {
   meta: {
-    name: 'antfu',
+    name: 'thewlabs',
     version,
   },
   // @keep-sorted

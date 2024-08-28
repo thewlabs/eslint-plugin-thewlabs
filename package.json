@@ -1,18 +1,17 @@
 {
-  "name": "eslint-plugin-antfu",
+  "name": "eslint-plugin-thewlabs",
   "type": "module",
   "version": "2.3.6",
-  "packageManager": "pnpm@9.8.0",
+  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1",
   "description": "Anthony extended ESLint rules",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "Wilfried AGO <wilfriedago@pm.me> (https://github.com/wilfriedago)",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/eslint-plugin-antfu#readme",
+  "homepage": "https://github.com/thewlabs/eslint-plugin-thewlabs#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/eslint-plugin-antfu.git"
+    "url": "git+https://github.com/thewlabs/eslint-plugin-thewlabs.git"
   },
-  "bugs": "https://github.com/antfu/eslint-plugin-antfu/issues",
+  "bugs": "https://github.com/thewlabs/eslint-plugin-thewlabs/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -46,8 +45,6 @@
     "@antfu/utils": "^0.7.10"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.27.0",
-    "@antfu/ni": "^0.22.4",
     "@types/eslint": "^9.6.0",
     "@types/lodash.merge": "^4.6.9",
     "@types/node": "^22.5.0",
@@ -56,7 +53,9 @@
     "@typescript-eslint/utils": "^8.2.0",
     "bumpp": "^9.5.1",
     "eslint": "^9.9.0",
+    "eslint-config-thewlabs": "^2.27.5",
     "eslint-define-config": "^2.1.0",
+    "eslint-plugin-thewlabs": "workspace:*",
     "eslint-vitest-rule-tester": "^0.6.1",
     "esno": "^4.7.0",
     "jsonc-eslint-parser": "^2.4.0",
@@ -73,7 +72,7 @@
     "vitest": "^2.0.5"
   },
   "resolutions": {
-    "eslint-plugin-antfu": "workspace:*"
+    "eslint-plugin-thewlabs": "workspace:*"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

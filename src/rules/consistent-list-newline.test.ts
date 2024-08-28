@@ -141,10 +141,10 @@ const valids: ValidTestCase[] = [
     code: $`
       function Foo() {
         return (
-          <div 
+          <div
             className="text-white" onClick="bar"
             style={{
-              color: 'red' 
+              color: 'red'
             }}
           >
             hi
@@ -172,7 +172,7 @@ const valids: ValidTestCase[] = [
     code: $`
       {
         "foo": [
-          "bar", 
+          "bar",
           "baz"
         ]
       }
@@ -299,7 +299,7 @@ const invalid: InvalidTestCase[] = [
       "const a = (
         <div>
           {text.map((
-            item, 
+            item,
       index
       ) => (
             <p>
@@ -317,7 +317,7 @@ const invalid: InvalidTestCase[] = [
   // https://github.com/antfu/eslint-plugin-antfu/issues/18
   {
     code: $`
-      export default antfu({
+      export default thewlabs({
       },
       {
         foo: 'bar'
@@ -327,7 +327,7 @@ const invalid: InvalidTestCase[] = [
       )
     `,
     output: o => expect(o).toMatchInlineSnapshot(`
-      "export default antfu({
+      "export default thewlabs({
       },{
         foo: 'bar'
       }
@@ -368,7 +368,7 @@ const invalid: InvalidTestCase[] = [
     code: $`
       function Foo() {
         return (
-          <div 
+          <div
             className="text-white" onClick="bar"
             style={{ color: 'red' }}
           >
@@ -380,8 +380,8 @@ const invalid: InvalidTestCase[] = [
     output: o => expect(o).toMatchInlineSnapshot(`
       "function Foo() {
         return (
-          <div 
-            className="text-white" 
+          <div
+            className="text-white"
       onClick="bar"
             style={{ color: 'red' }}
           >
@@ -399,7 +399,7 @@ const invalid: InvalidTestCase[] = [
   // https://github.com/antfu/eslint-plugin-antfu/issues/18
   {
     code: $`
-      export default antfu({
+      export default thewlabs({
       },
       // some comment
       {
@@ -411,7 +411,7 @@ const invalid: InvalidTestCase[] = [
       )
     `,
     output: o => expect(o).toMatchInlineSnapshot(`
-      "export default antfu({
+      "export default thewlabs({
       },
       // some comment
       {
@@ -488,7 +488,7 @@ const invalid: InvalidTestCase[] = [
     output: o => expect(o).toMatchInlineSnapshot(`
       "{
         "foo": {
-          "a": "1",         
+          "a": "1",
       "b": "2"
         }
       }"
@@ -531,9 +531,9 @@ const invalid: InvalidTestCase[] = [
     output: o => expect(o).toMatchInlineSnapshot(`
       "interface Foo {
         bar: (
-          foo: string, 
+          foo: string,
       bar: {
-            bar: string, 
+            bar: string,
       baz: string
        }
       ) => void
