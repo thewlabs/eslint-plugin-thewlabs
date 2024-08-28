@@ -9,7 +9,7 @@ const hasDocs = [
   'top-level-function',
 ]
 
-const blobUrl = 'https://github.com/antfu/eslint-plugin-antfu/blob/main/src/rules/'
+const blobUrl = 'https://github.com/thewlabs/eslint-plugin-thewlabs/blob/main/src/rules/'
 
 export interface RuleModule<
   T extends readonly unknown[],
