@@ -30,9 +30,9 @@
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
-    "lint": "pnpm run dev && eslint .",
+    "lint": "pnpm dev && eslint .",
     "prepublishOnly": "nr build",
-    "release": "bumpp && npm publish",
+    "release": "bumpp && pnpm publish",
     "start": "esno src/index.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
