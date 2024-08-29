@@ -1,6 +1,7 @@
 import { unindent } from '@antfu/utils'
 import { createEslintRule } from '../utils'
 
+export const RULE_NAME = 'indent-unindent'
 export type MessageIds = 'indent-unindent'
 export type Options = [{
   indent?: number
@@ -8,7 +9,7 @@ export type Options = [{
 }]
 
 export default createEslintRule<Options, MessageIds>({
-  name: 'indent-unindent',
+  name: RULE_NAME,
   meta: {
     type: 'layout',
     docs: {
@@ -48,12 +49,11 @@ export default createEslintRule<Options, MessageIds>({
     return {
       TaggedTemplateExpression(node) {
         const id = node.tag
-        if (!id || id.type !== 'Identifier')
-          return
-        if (!tags.includes(id.name))
-          return
-        if (node.quasi.quasis.length !== 1)
-          return
+
+        if (!id || id.type !== 'Identifier') return
+        if (!tags.includes(id.name)) return
+        if (node.quasi.quasis.length !== 1) return
+
         const quasi = node.quasi.quasis[0]
         const value = quasi.value.raw
         const lineStartIndex = context.sourceCode.getIndexFromLoc({
