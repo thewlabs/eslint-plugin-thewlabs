@@ -1,6 +1,6 @@
 # curly
 
-Anthony's opinionated taste with curly. Simliar to eslint's builtin curly: [`['error', 'multi-or-nest', 'consistent']`](https://eslint.org/docs/latest/rules/curly#consistent) but allows both curly and non-curly on one-liner. This rule is not configurable.
+Similar to eslint's builtin curly: [`['error', 'multi-or-nest', 'consistent']`](https://eslint.org/docs/latest/rules/curly#consistent) but allows both curly and non-curly on one-liner. This rule is not configurable.
 
 ## Rule Details
 
@@ -12,8 +12,7 @@ if (foo) {
 }
 
 // 👍 ok
-if (foo)
-  bar()
+if (foo) bar()
 ```
 
 <!-- eslint-skip -->

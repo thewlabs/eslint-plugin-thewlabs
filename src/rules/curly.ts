@@ -10,7 +10,7 @@ export default createEslintRule<Options, MessageIds>({
   meta: {
     type: 'layout',
     docs: {
-      description: 'Enforce Anthony\'s style of curly bracket',
+      description: 'Enforce style of curly bracket',
     },
     fixable: 'whitespace',
     schema: [],
