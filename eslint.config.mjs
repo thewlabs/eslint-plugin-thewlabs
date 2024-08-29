@@ -14,15 +14,18 @@ export default thewlabs(
     name: 'tests',
     files: ['**/*.test.ts'],
     rules: {
-      // 'thewlabs/indent-unindent': 'error',
+      'antfu/indent-unindent': 'error',
+    },
+  },
+  {
+    rules: {
+      'antfu/if-newline': 'off',
     },
   },
 )
   // replace local config
   .onResolved((configs) => {
     configs.forEach((config) => {
-      if (config?.plugins?.thewlabs) {
-        config.plugins.thewlabs = local
-      }
+      if (config?.plugins?.thewlabs) config.plugins.thewlabs = local
     })
   })
