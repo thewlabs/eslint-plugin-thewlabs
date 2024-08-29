@@ -1,6 +1,5 @@
 import type { ESLint, Linter } from 'eslint'
 import { version } from '../package.json'
-import ifNewline from './rules/if-newline'
 import importDedupe from './rules/import-dedupe'
 import topLevelFunction from './rules/top-level-function'
 import noImportNodeModulesByPath from './rules/no-import-node-modules-by-path'
@@ -19,7 +18,6 @@ const plugin = {
   rules: {
     'consistent-list-newline': consistentListNewline,
     'curly': curly,
-    'if-newline': ifNewline,
     'import-dedupe': importDedupe,
     'indent-unindent': indentUnindent,
     'no-import-dist': noImportDist,
