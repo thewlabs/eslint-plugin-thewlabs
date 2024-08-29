@@ -3,13 +3,13 @@
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 
-thewlabs extended eslint rules. For [thewlabs/eslint-config](https://github.com/thewlabs/eslint-config-thewlabs).
+thewlabs extended eslint rules. For [eslint-config-thewlabs](https://github.com/thewlabs/eslint-config-thewlabs).
 
 [Rules List](./src/rules)
 
 ## License
 
-[MIT](./LICENSE) License © 2023-PRESENT [Anthony Fu](https://github.com/thewlabs)
+[MIT](./LICENSE) License © 2024 [thewlabs](https://github.com/thewlabs)
 
 <!-- Badges -->
 
